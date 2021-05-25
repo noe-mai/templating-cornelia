@@ -5,6 +5,7 @@ html {
 
 figure {
   margin: 0;
+  padding: 0;
 }
 
 .text-uppercase {
@@ -62,6 +63,13 @@ nav li:last-of-type {
   border-radius: 40px;
 }
 
+.btn-large {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+}
+
 .btn-green {
   background-color: #0b4141;
   text-decoration: none;
@@ -81,9 +89,62 @@ nav li:last-of-type {
   font-size: 20px;
 }
 
+.btn-border-green {
+  background-color: transparent;
+  text-decoration: none;
+  border: solid 3px #0b4141;
+  list-style: none;
+  color: #0b4141;
+  text-align: center;
+  font-size: 20px;
+}
+
 .screen {
   position: relative;
   height: calc(100vh - 80px);
+}
+
+.screen-pink {
+  background-image: url("/images/confettis.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-color: #ffccbc;
+}
+
+.screen-grey {
+  background-image: url(/images/Your\ product.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.screen-white-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 204, 188, 1) 100%
+  );
+}
+.screen-gradient-pink {
+  height: auto;
+  padding-top: 70px;
+  background-color: rgb(255, 255, 255);
+  background-image: url("/images/testimonials-bg.png"),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 17%,
+      rgba(255, 204, 188, 1) 100%
+    );
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.screen-green {
+  background-color: #0b4141;
+}
+.screen-grey {
+  background-color: #f5f5f5;
 }
 
 .principal-text {
@@ -113,6 +174,10 @@ nav li:last-of-type {
   text-align: left;
 }
 
+.title-centered {
+  font-size: 50px;
+}
+
 .title-pink {
   color: #ffccbc;
 }
@@ -122,13 +187,16 @@ nav li:last-of-type {
   padding-top: 10px;
 }
 
+.title-green {
+  color: #0b4141;
+}
+
 .title-black {
   color: #0b4141;
   background: linear-gradient(
     180deg,
-    rgba(11, 65, 65, 1) 50%,
-    rgba(11, 46, 39, 1) 50%,
-    #0b2e27 50%
+    rgba(11, 65, 65, 1) 58%,
+    rgba(11, 46, 39, 1) 50%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -136,6 +204,14 @@ nav li:last-of-type {
 
   position: relative;
   z-index: 3;
+}
+
+.title-green-center {
+  color: #0b4141;
+  font-family: sans-serif;
+  font-size: 60px;
+  padding-top: 30px;
+  text-align: left;
 }
 
 .main-hero-img {
@@ -151,13 +227,6 @@ nav li:last-of-type {
 .main-hero-img img {
   max-width: 100%;
   text-align: center;
-}
-
-.screen-pink {
-  background-image: url("/images/confettis.png");
-  background-size: contain;
-  background-position: 50% 50%;
-  background-color: #ffccbc;
 }
 
 .text-white,
@@ -177,8 +246,9 @@ nav li:last-of-type {
   margin: 0 auto;
 }
 
-.screen-green {
-  background-color: #0b4141;
+.text-black {
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 .two-column {
@@ -230,10 +300,92 @@ nav li:last-of-type {
 .text-content {
   width: 70%;
   margin-top: 15%;
+  overflow: hidden;
 }
 
 .text-with-icon {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.text-centered-grey {
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10vh;
+}
+
+.btn-border-green {
+  margin-top: 50px;
+}
+.logo-app-store {
+  display: flex;
+  margin: 0 auto;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+  margin: 70px auto 70px;
+}
+.testimonials-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(100% / 3);
+}
+
+.card {
+  padding: 20px;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-text {
+  text-align: left;
+  margin: 0;
+  color: #0b4141;
+}
+
+.card-details {
+  padding: 3px 20px;
+  align-items: center;
+  color: #0b4141;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.card-name {
+  font-weight: bold;
+}
+
+.page-footer {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-ctas {
+  display: flex;
+  width: 100%;
+  gap: 48px;
+  margin-top: 48px;
+  justify-content: center;
+}
+
+.footer-by-cornelia {
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  bottom: 80px;
 }
