@@ -105,14 +105,14 @@ nav li:last-of-type {
 }
 
 .screen-pink {
-  background-image: url("./images/confettis.png");
+  background-image: url("../images/confettis.png");
   background-size: contain;
   background-position: 50% 50%;
   background-color: #ffccbc;
 }
 
 .screen-grey {
-  background-image: url("./images/your-product.png");
+  background-image: url("../images/your-product.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -130,7 +130,7 @@ nav li:last-of-type {
   height: auto;
   padding-top: 70px;
   background-color: rgb(255, 255, 255);
-  background-image: url("./images/testimonials-bg.png"),
+  background-image: url("../images/testimonials-bg.png"),
     linear-gradient(
       0deg,
       rgba(255, 255, 255, 1) 17%,
