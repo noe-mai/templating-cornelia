@@ -112,7 +112,7 @@ nav li:last-of-type {
 }
 
 .screen-grey {
-  background-image: url(./images/your-product.png);
+  background-image: url("./images/your-product.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
